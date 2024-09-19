@@ -7,7 +7,7 @@ const session = require('express-session'); // express-session 미들웨어: 세
 const nunjucks = require('nunjucks'); // Nunjucks: 템플릿 엔진
 const dotenv = require('dotenv'); // dotenv: .env파일(환경변수)
 
-dotnev.config(); // .env 파일의 환경 변수를 불러와 process .env에 설정
+dotenv.config(); // .env 파일의 환경 변수를 불러와 process .env에 설정
 
 const authRouter = require('./routes/auth'); // 인증 관련 라우터 모듈
 const indexRouter = require('./routes'); // 메인 인덱스 라우터 모듈
